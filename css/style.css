@@ -52,6 +52,16 @@ a{
 	height: 80px;
 	text-align: center;
 	margin: auto;
+	animation-name: headingAnimation;
+	animation-duration: 3s;
+}
+@keyframes headingAnimation {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 h1{
 	font-size: 60px;
@@ -79,6 +89,16 @@ h2{
 	font-weight: bolder;
 	margin-top: 50px;
 	text-transform: uppercase;
+	animation-name: subheadingAnimation;
+	animation-duration: 2s;
+}
+@keyframes subheadingAnimation {
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 #blokovi{
 	display: flex;
@@ -90,6 +110,12 @@ h2{
 .blok{
 	width: 30%;
 	justify-content: space-around;
+	transition-duration: 0.3s;
+}
+.blok:hover{
+	transition: ease-in-out;
+	transform: scale(1.1);
+	transition-duration: 0.3s;
 }
 .blok img{
 	height: 490px;
@@ -130,6 +156,10 @@ h3{
     padding: 10px;
     color: #dbc5de;
 	margin-bottom: 20px;
+}
+#center2 a:hover{
+	background-color: #dbc5de;
+	color: #e3001e;
 }
 a{
     text-decoration: none;
@@ -200,6 +230,12 @@ img{
 }
 .photos{
 	width: 20%;
+	transition-duration: 0.5s;
+}
+.photos:hover{
+	transition: ease-out;
+	transform: scale(1.1);
+	transition-duration: 0.5s;
 }
 p{
 	color: #000000;
@@ -255,11 +291,12 @@ label{
 	width: 35%;
 	padding: 11px;
 	font-size: 20px;
-	color: #dbc5de;
+	color: #fad5d2;
 	background-color: #e3001e;
 }
 .forma #btnMessage:hover{
-	background-color: #84528d;
+	background-color: #fad5d2;
+	color: #e3001e;
 }
 #author{
 	width: 90%;
@@ -306,4 +343,7 @@ footer ul li{
 }
 .futer i{
 	margin-right: 8px;
+}
+.futer a:hover{
+	color: #fc83c8;
 }
